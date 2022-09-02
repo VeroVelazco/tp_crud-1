@@ -18,31 +18,47 @@
 				<div class="row product-detail">
 					<div class="col-12 col-md-6">
 						<label for="first_name" class="form-label">Nombre: </label>
-						<input type="text" id="first_name" name="first_name" placeholder="Ej: Cosme " class="form-input">
+						<input type="text" id="first_name" name="first_name" placeholder="Ej: Cosme " class="form-input" value="<%= locals.old && old.first_name %>">
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.first_name ? errors.first_name.msg :null %></small>
 					</div>
                     <div class="col-12 col-md-6">
 						<label for="last_name" class="form-label">Apellido: </label>
-						<input type="text" id="last_name" name="last_name" placeholder="Ej:  Fulanito" class="form-input">
+						<input type="text" id="last_name" name="last_name" placeholder="Ej:  Fulanito" class="form-input" value="<%= locals.old && old.last_name %>" >
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.last_name ? errors.last_name.msg :null %></small>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="email" class="form-label">Email:</label>
+						<input type="email" id="email" name="email" placeholder="Ej: borbotones@gmail.com" class="form-input" value="<%= locals.old && old.email %>">
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.email ? errors.email.msg :null %></small>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="password" class="form-label">Contraseña:</label>
+						<input type="password" id="password" name="password" placeholder="Ej: xxxxxxx" class="form-input" value="<%= locals.old && old.password %>">
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.password ? errors.password.msg :null %></small>
 					</div>
 					<div class="col-12 col-md-6">
 						<label for="dni" class="form-label">Numero de DNI:</label>
-						<input type="number" id="dni" name="dni" placeholder="Ej: 32602xxx" class="form-input">
+						<input type="number" id="dni" name="dni" placeholder="Ej: 32602xxx" class="form-input" value="<%= locals.old && old.number %>">
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.dni ? errors.dni.msg :null %></small>
+					</div>
+				<div class="col-12 col-md-6">
+						<label for="direction" class="form-label">Domicilio:</label>
+						<input type="text" id="direction" name="direction" placeholder="Ej: Av. Siempre viva" class="form-input" value="<%= locals.old && old.direction %>">
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.direction ? errors.direction.msg :null %></small>
 					</div>
 					<div class="col-12 col-md-6">
-						<label for="direction" class="form-label">Domicilio:</label>
-						<input type="text" id="direction" name="direction" placeholder="Ej: Av. Siempre viva" class="form-input">
-					</div>
-                    <div class="col-12 col-md-6">
 						<label for="heigth" class="form-label">Altura</label>
-						<input type="number" id="heigth" name="heigth" placeholder="Ej: 123" class="form-input">
+						<input type="number" id="heigth" name="heigth" placeholder="Ej: 123" class="form-input" value="<%= locals.old && old.heigth %>">
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.heigth ? errors.heigth.msg :null %></small>
 					</div>
 					<div class="col-12 col-md-6">
 						<label for="location" class="form-label">Localidad:</label>
 						<select name="location" id="location" class="form-input">
-							<option value="">Elegí</option>
-							<option value="in-sale">CABA</option>
-							<option value="visited">Gran Buenos Aires</option>
+							<option value="" value="<%= locals.old && old.location %>">Elegí</option>
+							<option value="caba">CABA</option>
+							<option value="bsas">Gran Buenos Aires</option>
 						</select>
+						<small style="color: red; font-size: 12px;"><%= locals.errors && errors.location ? errors.location.msg :null %></small>
 					</div>
 					<div class="col-12">
 						<label for="description" class="form-label">Dejanos tu mensaje:</label>
