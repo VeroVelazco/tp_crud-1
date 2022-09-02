@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Registrate'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Ingresa tus datos</h2>
+			</div>
+		</div>
+		<div class="col-12">
+			<form action="" method="POST">
+				<div class="row product-detail">
+					<div class="col-12 col-md-6">
+						<label for="first_name" class="form-label">Nombre: </label>
+						<input type="text" id="first_name" name="first_name" placeholder="Ej: Cosme " class="form-input">
+					</div>
+                    <div class="col-12 col-md-6">
+						<label for="last_name" class="form-label">Apellido: </label>
+						<input type="text" id="last_name" name="last_name" placeholder="Ej:  Fulanito" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="dni" class="form-label">Numero de DNI:</label>
+						<input type="number" id="dni" name="dni" placeholder="Ej: 32602xxx" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="direction" class="form-label">Domicilio:</label>
+						<input type="text" id="direction" name="direction" placeholder="Ej: Av. Siempre viva" class="form-input">
+					</div>
+                    <div class="col-12 col-md-6">
+						<label for="heigth" class="form-label">Altura</label>
+						<input type="number" id="heigth" name="heigth" placeholder="Ej: 123" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="location" class="form-label">Localidad:</label>
+						<select name="location" id="location" class="form-input">
+							<option value="">Elegí</option>
+							<option value="in-sale">CABA</option>
+							<option value="visited">Gran Buenos Aires</option>
+						</select>
+					</div>
+					<div class="col-12">
+						<label for="description" class="form-label">Dejanos tu mensaje:</label>
+						<textarea name="description" id="description" class="form-input" style="resize: none"></textarea>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="buy-now-button">Registrate</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
