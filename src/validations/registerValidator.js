@@ -17,9 +17,6 @@ module.exports = [
     check('password')
         .notEmpty().withMessage('Debes completar la contraseña').bail()
         .isLength({ min: 5 }).withMessage('La contraseña debe tener al menos 5 caracteres'),
-    check('password2')
-        .notEmpty().withMessage('Debes completar la contraseña').bail()
-        .isLength({ min: 5 }).withMessage('La contraseña debe tener al menos 5 caracteres'),
     check('direction')
         .notEmpty().withMessage('Debes completar el domicilio').bail()
         .isLength({ min: 3 }).withMessage('La dirección debe tener al menos 5 caracteres'),

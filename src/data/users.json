@@ -1,3 +1,23 @@
 [
-   
+   {
+      "id": 1,
+      "first_name": "first_name",
+      "last_name": "last_name",
+      "email": "email",
+      "password": "password",
+      "dni": "dni",
+      "direction": "direction",
+      "heigth": "heigth",
+      "location": "location"
+   },
+   {
+      "id": 2,
+      "first_name": "Veronica",
+      "last_name": "Velazco",
+      "dni": 12345678,
+      "email": "veroverona31@gmail.com",
+      "password": "123123",
+      "direction": "av.calle falsa",
+      "heigth": 123
+   }
 ]
