@@ -19,5 +19,45 @@
       "password": "123123",
       "direction": "av.calle falsa",
       "heigth": 123
+   },
+   {
+      "id": 3,
+      "first_name": "azucena",
+      "last_name": "Gomez",
+      "dni": 12345678,
+      "email": "azu@gmail.com",
+      "password": "$2a$10$IAm0EmmszkU5gSGbXu5W9ONHKR0gsjKV.SIoQNRSV5Ff7RdlsPGtC",
+      "direction": "av. hfureoh",
+      "heigth": 123
+   },
+   {
+      "id": 4,
+      "first_name": "Cosme",
+      "last_name": "Fulanito",
+      "dni": 12345678,
+      "email": "cosme@gmail.com",
+      "password": "$2a$10$raEMhAJiD9fFO1j.M1Fzn.1zhIEX22WuAnB4bfGI.MoQSG3uPIpyy",
+      "direction": "isoadh",
+      "heigth": 4564
+   },
+   {
+      "id": 5,
+      "first_name": "Mafalda",
+      "last_name": "Quino",
+      "dni": 12345678,
+      "email": "delfin@gmail.com",
+      "password": "$2a$10$f/AtxxuXaokMAcyMxZB9oeReAlDvfW5DMal98oaICbpLKKjHRjW.S",
+      "direction": "av. udwisfui",
+      "heigth": 123
+   },
+   {
+      "id": 6,
+      "first_name": "caramelo",
+      "last_name": "fiufiu",
+      "dni": 12345678,
+      "email": "fiufiu@gmail.com",
+      "password": "$2a$10$0u.hcdbPP7AC2VDO.2pprOqnEwdNy14ytehW1.desmC0jGRA7oKH2",
+      "direction": "av.hndeobfoiw",
+      "heigth": 123
    }
 ]
